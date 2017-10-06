@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Todisco_News>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Todisco_News>
+    </modules>
+</config>

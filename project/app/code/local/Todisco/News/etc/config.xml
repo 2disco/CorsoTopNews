@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Todisco_News>
+            <version>0.1.0</version>
+        </Todisco_News>
+    </modules>
+    <global>
+        <blocks>
+            <todisco_news>
+                <class>Todisco_News_Block</class>
+            </todisco_news>
+        </blocks>
+        <helper>
+            <todisco_news>
+                <class>Todisco_News_Helper</class>
+            </todisco_news>
+        </helper>
+        <models>
+            <todisco_news>
+                <class>Todisco_News_Model</class>
+                <resourceModel>todisco_news_resource</resourceModel>
+            </todisco_news>
+            <todisco_news_resource>
+                <class>Todisco_News_Model_Resource</class>
+                <entities>
+                    <category>
+                        <table>todisco_news_category</table>
+                    </category>
+                    <story>
+                        <table>todisco_news_story</table>
+                    </story>
+                </entities>
+            </todisco_news_resource>
+        </models>
+        <resources>
+            <todisco_news_setup>
+                <setup>
+                    <module>Todisco_News</module>
+                </setup>
+            </todisco_news_setup>
+        </resources>
+    </global>
+    <frontend>
+
+    </frontend>
+    <admin>
+
+    </admin>
+    <adminhtml>
+
+    </adminhtml>
+    <default>
+
+    </default>
+</config>
