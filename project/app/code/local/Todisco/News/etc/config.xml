@@ -42,13 +42,39 @@
         </resources>
     </global>
     <frontend>
-
+        <adminhtml>
+            <translate>
+                <modules>
+                    <todisco_news>
+                        <files>
+                            <default>Todisco_News.csv</default>
+                        </files>
+                    </todisco_news>
+                </modules>
+            </translate>
+        </adminhtml>
     </frontend>
     <admin>
-
+        <routers>
+            <todisco_news>
+                <use>admin</use>
+                <args>
+                    <module>Todisco_News</module>
+                    <frontName>todisco_news</frontName>
+                </args>
+            </todisco_news>
+        </routers>
     </admin>
     <adminhtml>
-
+        <translate>
+            <modules>
+                <todisco_news>
+                    <files>
+                        <default>Todisco_News.csv</default>
+                    </files>
+                </todisco_news>
+            </modules>
+        </translate>
     </adminhtml>
     <default>
 
