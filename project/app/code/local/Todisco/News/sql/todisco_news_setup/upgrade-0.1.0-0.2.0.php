@@ -42,15 +42,15 @@ $tableStory->addColumn(
     ->addColumn(
         'category_id',
         Varien_Db_Ddl_Table::TYPE_INTEGER, null,
-        array('nullable' => false),
+        array('nullable' => true),
         'Story Category')
     ->addColumn(
-        'create at',
+        'created_at',
         Varien_Db_Ddl_Table::TYPE_TIMESTAMP, null,
         array('default' => Varien_Db_Ddl_Table::TIMESTAMP_INIT),
         'Story Created At')
     ->addColumn(
-        'updated at',
+        'updated_at',
         Varien_Db_Ddl_Table::TYPE_TIMESTAMP, null,
         array('default' => Varien_Db_Ddl_Table::TIMESTAMP_INIT_UPDATE),
         'Story Updated At');

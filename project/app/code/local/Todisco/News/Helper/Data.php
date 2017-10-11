@@ -13,7 +13,7 @@
  * @package Cms
  */
 
-class Todisco_News_Helper_Data extends Mage_Core_Block_Abstract
+class Todisco_News_Helper_Data extends Mage_Core_Helper_Abstract
 {
 
 }

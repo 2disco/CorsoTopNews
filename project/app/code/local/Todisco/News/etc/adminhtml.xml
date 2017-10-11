@@ -13,7 +13,7 @@
                             <action>todisco_news/adminhtml_category</action>
                         </todisco_news_category>
                         <todisco_news_story>
-                            <title>Stores</title>
+                            <title>Stories</title>
                             <sort_order>20</sort_order>
                             <action>todisco_news/adminhtml_story</action>
                         </todisco_news_story>
@@ -42,7 +42,7 @@
                             <config>
                                 <children>
                                     <todisco_news translate="title">
-                                        <title>Todisco_News</title>
+                                        <title>Todisco News</title>
                                         <sort_order>100</sort_order>
                                     </todisco_news>
                                 </children>

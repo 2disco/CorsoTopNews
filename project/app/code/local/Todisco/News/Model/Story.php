@@ -19,7 +19,7 @@
  * @method setCategoryId(int $categoryid)
  * @method Todisco_News_Model_Story getCreatedAt()
  * @method Todisco_News_Model_Story getUpdatedAt()
- * @method setUpdatedAt(string $updatedat)
+ * @method setUpdatedAt(string $updatedAt)
  * @method
  * @author Marco Todisco
  * @version 0.2.0
@@ -55,7 +55,7 @@ class Todisco_News_Model_Story extends Mage_Core_Model_Abstract
     protected function _beforeSave()
     {
         parent::_beforeSave();
-        $this->setUpdatedAt(Mage::getSingleton('core/data')->gmtDate());
+        $this->setUpdatedAt(Mage::getSingleton('core/date')->gmtDate());
         return $this;
     }
         /**

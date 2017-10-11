@@ -11,11 +11,11 @@
                 <class>Todisco_News_Block</class>
             </todisco_news>
         </blocks>
-        <helper>
+        <helpers>
             <todisco_news>
                 <class>Todisco_News_Helper</class>
             </todisco_news>
-        </helper>
+        </helpers>
         <models>
             <todisco_news>
                 <class>Todisco_News_Model</class>
@@ -42,7 +42,6 @@
         </resources>
     </global>
     <frontend>
-        <adminhtml>
             <translate>
                 <modules>
                     <todisco_news>
@@ -52,7 +51,6 @@
                     </todisco_news>
                 </modules>
             </translate>
-        </adminhtml>
     </frontend>
     <admin>
         <routers>

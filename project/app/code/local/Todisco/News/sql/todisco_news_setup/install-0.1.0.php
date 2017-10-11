@@ -19,6 +19,7 @@ $installer->startSetup();
 
 //prepare table for todisco_news_category
 $tableCategory = $installer->getConnection()->newTable($installer->getTable('todisco_news/category'));
+
 $tableCategory->addColumn(
     'category_id',
     Varien_Db_Ddl_Table::TYPE_INTEGER, null,
@@ -40,12 +41,12 @@ $tableCategory->addColumn(
         array('nullable' => false),
         'Category Status')
    ->addColumn(
-        'create at',
+        'created_at',
         Varien_Db_Ddl_Table::TYPE_TIMESTAMP, null,
         array('default' => Varien_Db_Ddl_Table::TIMESTAMP_INIT),
         'Category Created At')
    ->addColumn(
-        'updated at',
+        'updated_at',
         Varien_Db_Ddl_Table::TYPE_TIMESTAMP, null,
        array('default' => Varien_Db_Ddl_Table::TIMESTAMP_INIT_UPDATE),
         'Category Updated At');
@@ -57,4 +58,3 @@ $tableCategory->addColumn(
 $installer->getConnection()->createTable($tableCategory);
 
 $installer->endSetup();
-
