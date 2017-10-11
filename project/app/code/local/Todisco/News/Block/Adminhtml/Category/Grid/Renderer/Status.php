@@ -14,12 +14,12 @@ class Todisco_News_Block_Adminhtml_Category_Grid_Renderer_Status extends Mage_Ad
     public function render(Varien_Object $row)
     {
         if ($row->getData('status') == 0){
-            return '<span class="grid-severity-minor"><span>' . $this->__('Disabled') . '<span></span>';
+            return '<span class="grid-severity-minor"><span>' . $this->__('Disabled') . '</span></span>';
         }
         if ($row->getData('status') == 1){
-            return '<span class="grid-severity-notice"><span>' . $this->__('Enabled') . '<span></span>';
+            return '<span class="grid-severity-notice"><span>' . $this->__('Enabled') . '</span></span>';
         }
-            return '<span class="grid-severity-major"><span>' . $this->__('Error') . '<span></span>';
+            return '<span class="grid-severity-major"><span>' . $this->__('Error') . '</span></span>';
     }
        // return parent::render($row);
 }
