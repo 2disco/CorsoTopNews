@@ -15,7 +15,8 @@ class Todisco_News_Adminhtml_CategoryController extends Mage_Adminhtml_Controlle
      */
     public function indexAction()
     {
-        echo 'eccomi'; die;
+        $this->loadLayout();
+        $this->renderLayout();
     }
 
     /**

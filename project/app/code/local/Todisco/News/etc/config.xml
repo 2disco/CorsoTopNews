@@ -75,6 +75,13 @@
                 </todisco_news>
             </modules>
         </translate>
+        <layout>
+            <updates>
+                <todisco_news>
+                    <file>todisco_news.xml</file>
+                </todisco_news>
+            </updates>
+        </layout>
     </adminhtml>
     <default>
 
