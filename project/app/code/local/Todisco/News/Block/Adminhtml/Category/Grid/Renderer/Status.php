@@ -21,5 +21,13 @@ class Todisco_News_Block_Adminhtml_Category_Grid_Renderer_Status extends Mage_Ad
         }
             return '<span class="grid-severity-major"><span>' . $this->__('Error') . '</span></span>';
     }
-       // return parent::render($row);
+
+    public function toGridArray()
+    {
+        $array = array();
+        foreach ($this->toOptionArray() as $option) {
+            $array[$option['value']] = $option['label'];
+        }
+        return $array;
+    }
 }

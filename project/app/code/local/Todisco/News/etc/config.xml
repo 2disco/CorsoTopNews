@@ -51,6 +51,22 @@
                     </todisco_news>
                 </modules>
             </translate>
+            <routers>
+                <todisco_news>
+                    <use>standard</use>
+                    <args>
+                        <module>Todisco_News</module>
+                        <frontName>stories</frontName>
+                    </args>
+                </todisco_news>
+            </routers>
+            <layout>
+                <updates>
+                    <todisco_news>
+                        <file>todisco_news.xml</file>
+                    </todisco_news>
+                </updates>
+            </layout>
     </frontend>
     <admin>
         <routers>

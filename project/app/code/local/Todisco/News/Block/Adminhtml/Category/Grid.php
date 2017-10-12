@@ -73,7 +73,6 @@ class Todisco_News_Block_Adminhtml_Category_Grid extends Mage_Adminhtml_Block_Wi
                'type' => 'options',
                'options' => Mage::getModel('todisco_news/source_status')->toOptionArray(),
                'renderer' => 'todisco_news/adminhtml_category_grid_renderer_status',
-
            )
        );
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<layout>
+    <todisco_news_list_index>
+        <reference name="content">
+            <block type="todisco_news/story" name="todisco_news.list" template="todisco_news/list.phtml"/>
+        </reference>
+    </todisco_news_list_index>
+</layout>
